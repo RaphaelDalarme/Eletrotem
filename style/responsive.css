@@ -27,7 +27,7 @@
   .hero p { font-size: 0.85rem; }
   footer { font-size: 0.85rem; }
   header img {
-    max-width: 10%; 
+    max-width: 40%; 
   }
 }
 
@@ -43,6 +43,7 @@
   .header img {
     max-width: 140px; 
   }
+
 
 
 
