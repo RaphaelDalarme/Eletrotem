@@ -27,7 +27,7 @@
   .hero p { font-size: 0.85rem; }
   footer { font-size: 0.85rem; }
   header img {
-    max-width: 150px; 
+    max-width: 180px; 
   }
 }
 
@@ -41,8 +41,9 @@
   }
 }
   header img {
-    max-width: 150px; 
+    max-width: 180px; 
   }
+
 
 
 
