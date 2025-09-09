@@ -1,0 +1,39 @@
+/* Responsividade */
+@media (max-width: 900px) {
+  nav ul { display: none; }
+  .hero h2 { font-size: 2rem; }
+  .hero p { font-size: 1rem; }
+  .sobre-container { flex-direction: column; }
+  .imagem-sobre, .texto-sobre { max-width: 100%; }
+  .bloco-destaque { bottom: 10px; left: 10px; max-width: 90%; }
+  .contato-container { flex-direction: column; gap: 30px; }
+  .contato { flex-direction: column; gap: 30px; }
+  .formulario-contato, .contato-info { flex: 1 1 100%; }
+}
+
+@media (max-width: 600px) {
+  header h1 { font-size: 1.2rem; }
+  .hero h2 { font-size: 1.5rem; }
+  .hero p { font-size: 0.95rem; }
+  .hero button { width: 100%; max-width: 250px; }
+  section { padding: 60px 15px; }
+  .imagem-sobre img { max-height: 300px; }
+  .bloco-azul { width: 90%; height: 90%; }
+  .card h4, .projeto-card h4 { font-size: 1rem; }
+}
+
+@media (max-width: 500px) {
+  .hero h2 { font-size: 1.4rem; }
+  .hero p { font-size: 0.85rem; }
+  footer { font-size: 0.85rem; }
+}
+
+@media (max-width: 768px) {
+  .contato-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .formulario, .mapa {
+    max-width: 100%;
+  }
+}

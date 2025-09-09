@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eletrotem</title>
+  <link rel="stylesheet" href="/style/style.css">
+  <link rel="stylesheet" href="/style/reset.css">
+  <link rel="stylesheet" href="/style/layout.css">
+  <link rel="stylesheet" href="/style/components.css">
+  <link rel="stylesheet" href="/style/catalogo.css">
+  <link rel="stylesheet" href="/style/responsive.css">
+  <link rel="stylesheet" href="/style/footer.css">
+  
+
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1><img src="img/eletrotemLogoBranco.png"></h1>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre Nós</a></li>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="inicio" class="hero">
+    <div class="section-content">
+      <h2>Soluções em Energia e Automação</h2>
+      <p>Na <strong>Eletrotem</strong>, oferecemos produtos e serviços de alta qualidade para empresas que buscam eficiência, tecnologia e confiança.</p>
+      <div>
+        <button onclick="document.getElementById('produtos').scrollIntoView({behavior: 'smooth'})">Nossos Produtos</button>
+        <button onclick="document.getElementById('contato').scrollIntoView({behavior: 'smooth'})">Fale Conosco</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre Nós -->
+<section id="sobre">
+  <div class="section-content">
+    <h3>Sobre Nós</h3>
+    <div class="sobre-container">
+      <!-- Texto à esquerda -->
+      <div class="texto-sobre">
+        <p>A <strong>Eletrotem</strong> nasceu há quase <em>30 anos</em>, em <strong>Guarulhos</strong>, com a missão de oferecer <strong>soluções completas</strong> em <u>materiais elétricos</u>. Desde o início, nossa essência foi unir <strong>tradição</strong> e <strong>inovação</strong>, sempre colocando o <em>cliente no centro</em> de tudo o que fazemos.</p>
+        
+        <p>Ao longo dessa trajetória, nos tornamos referência pelo <strong>atendimento personalizado</strong> e <strong>humanizado</strong>, construindo <em>relações de confiança</em> e <strong>parcerias duradouras</strong>. Nossa dedicação nos levou a conquistar um grande diferencial: somos a <u>única revenda autorizada WEG em Guarulhos para motores</u>, reforçando a <strong>qualidade</strong> e <strong>credibilidade</strong> dos produtos que oferecemos.</p>
+        
+        <p>Com foco especial no setor <strong>industrial</strong>, atendemos empresas que buscam não apenas materiais, mas <strong>soluções inteligentes e sustentáveis</strong> para seus projetos. Trabalhamos lado a lado com nossos clientes, entendendo suas necessidades e oferecendo alternativas que unem <strong>desempenho</strong>, <strong>economia</strong> e <strong>segurança</strong>.</p>
+        
+        <p>Contamos com uma equipe de <strong>especialistas técnicos e comerciais</strong>, preparada para <em>orientar</em>, <em>apoiar</em> e trazer sempre as <strong>melhores opções do mercado</strong>. Nosso compromisso é crescer em <strong>visibilidade</strong> e <strong>impacto</strong>, mantendo a <strong>qualidade</strong>, <strong>sustentabilidade</strong> e <strong>inovação</strong> como pilares de cada passo que damos.</p>
+        
+        <p>Na <strong>Eletrotem</strong>, acreditamos que <em>energia vai muito além da eletricidade</em>: é a força que move <strong>pessoas, empresas e sonhos</strong>.</p>
+      </div>
+
+      <!-- Imagem à direita -->
+      <div class="imagem-sobre">
+        <div class="bloco-azul"></div>
+        <img src="img/EletrotemLoja.png" alt="Loja Eletrotem">
+        <div class="bloco-destaque">
+          Nossa loja: <strong>tradição</strong>, <strong>inovação</strong> e <strong>confiança</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="marcas">
+  <h2>Marcas que Trabalhamos</h2>
+  <div class="carrossel">
+    <div class="marcas-track">
+      <div class="item"><img src="/img/logos/weg.png" alt="Marca 1"></div>
+      <div class="item"><img src="/img/logos/penzel.png" alt="Marca 2"></div>
+      <div class="item"><img src="/img/logos/tramontina.png" alt="Marca 3"></div>
+      <div class="item"><img src="/img/logos/margirius.png" alt="Marca 4"></div>
+      <div class="item"><img src="/img/logos/metaltex.png" alt="Marca 5"></div>
+      <div class="item"><img src="/img/logos/goar.png" alt="Marca 6"></div>
+
+      <!-- duplicação para loop infinito -->
+      <div class="item"><img src="/img/logos/weg.png" alt="Marca 1"></div>
+      <div class="item"><img src="/img/logos/penzel.png" alt="Marca 2"></div>
+      <div class="item"><img src="/img/logos/tramontina.png" alt="Marca 3"></div>
+      <div class="item"><img src="/img/logos/margirius.png" alt="Marca 4"></div>
+      <div class="item"><img src="/img/logos/metaltex.png" alt="Marca 5"></div>
+      <div class="item"><img src="/img/logos/goar.png" alt="Marca 6"></div>
+    </div>
+  </div>
+</section>
+
+  <!-- Produtos -->
+  <section id="produtos">
+    <div class="section-content">
+          <h3>Produtos</h3>
+    <div class="produtos">
+      <!-- Você pode duplicar e editar estes cards facilmente -->
+      <div class="card">
+        <h4>Motores</h4>
+        <img src="img/Motor.png" alt="motores">
+        <p>Eficiência e durabilidade em cada movimento. Nossos motores garantem alto desempenho e confiabilidade para sua empresa.</p>
+          <a href="catalogo/motores.pdf" target="_blank" class="btn-catalogo">Ver Catálogo</a>
+      </div>
+      <div class="card">
+        <h4>Automação Industrial</h4>
+        <img src="img/Automacao.png" alt="automação">
+        <p>Soluções inteligentes para aumentar a eficiência da sua empresa.</p>
+        <a href="catalogo/autoamcao.pdf" target="_blank" class="btn-catalogo">Ver Catálogo</a>
+      </div>
+      <div class="card">
+        <h4>Cabos</h4>
+        <img src="img/Cabo.png" alt="Cabos">
+        <p>Segurança e qualidade que conduzem energia com confiança. Cabos resistentes, ideais para instalações industriais e comerciais.</p>
+        <a href="catalogo/cabo.pdf" target="_blank" class="btn-catalogo">Ver Catálogo</a>
+      </div>
+      <div class="card">
+        <h4>Iluminação</h4>
+        <img src="img/Lampada.png" alt="Iluminação">
+        <p>Tecnologia em LED e soluções modernas que iluminam com qualidade, reduzindo custos e aumentando a eficiência.</p>
+        <a href="catalogo/lampada.pdf" target="_blank" class="btn-catalogo">Ver Catálogo</a>
+      </div>
+      <div class="card">
+        <h4>Sensores</h4>
+        <img src="img/Sensor.png" alt="Sensores">
+        <p>Automação inteligente com sensores de alta precisão, assegurando desempenho, segurança e inovação para sua indústria.</p>
+        <a href="catalogo/sensor.pdf" target="_blank" class="btn-catalogo">Ver Catálogo</a>
+      </div>
+      <div class="card">
+        <h4>Ventiladores</h4>
+        <img src="img/Ventilador.png" alt="Ventilador">
+        <p>Ventilação eficiente e silenciosa, garantindo conforto e economia de energia no seu ambiente.</p>
+        <a href="catalogo/catalogoEletrotemVentiladores.pdf" target="_blank" class="btn-catalogo">Ver Catálogo</a>
+      </div>
+      <div class="card">
+        <h4>Inversores</h4>
+       <img src="img/Inversor.png" alt="Inversor">
+        <p>Controle inteligente para seus motores, garantindo eficiência energética, flexibilidade e proteção nos processos industriais.</p>
+        <a href="catalogo/inversor.pdf" target="_blank" class="btn-catalogo">Ver Catálogo</a>
+      </div>
+      <div class="card">
+        <h4>Disjuntores</h4>
+        <img src="img/disjuto.png" alt="Disjuntores">
+        <p>Segurança em primeiro lugar: disjuntores confiáveis que protegem suas instalações elétricas contra sobrecargas e curtos-circuitos.</p>
+        <a href="catalogo/disjunto.pdf" target="_blank" class="btn-catalogo">Ver Catálogo</a>
+      </div>
+    </div>
+  </section>
+
+<!-- Projetos Sustentáveis -->
+<section id="projetos">
+  <div class="section-content">
+    <h3>Projetos Sustentáveis</h3>
+    <p>A <strong>Eletrotem</strong> investe em soluções que unem tecnologia e responsabilidade ambiental.</p>
+    <div class="projetos">
+      <div class="projeto-card">
+        <h4>Troca de Motores</h4>
+        <p>Motores de alto rendimento WEG, alcançando <strong>25% de economia</strong>.</p>
+      </div>
+      <div class="projeto-card">
+        <h4>Eficiência em Iluminação</h4>
+        <p>Implementação de <strong>sistemas de iluminação LED</strong>, reduzindo mais de 40% do gasto energético.</p>
+      </div>
+    </div>
+
+    <!-- Botão Saiba Mais -->
+    <div class="saiba-mais">
+      <a href="/eficienciaEnergetica/eficiencia.html" class="btn-saiba-mais">Saiba Mais</a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Contato -->
+<section id="contato">
+  <div class="section-content">
+    <h3>Fale Conosco</h3>
+    <div class="contato">
+      <!-- Informações com ícones -->
+      <div class="contato-info">
+        <p class="iconTexto"><img src="img/gps.png" alt="Endereço" class="icon2"> Av. Nova Cumbica, 294 - Vila Nova Cumbica, Guarulhos - SP, 07231-000</p>
+        <p><img src="img/telefone.png" alt="Telefone" class="icon"> (11) 2412-0720</p>
+        <p><img src="img/o-email.png" alt="Email" class="icon"> eletrotem@eletrotem.com.br</p>
+      </div>
+
+      <!-- Formulário de contato -->
+      <div class="formulario-contato">
+        <form id="contatoForm">
+          <input type="text" name="nome" placeholder="Seu nome" required>
+          <input type="email" name="email" placeholder="Seu email" required>
+          <input type="tel" name="telefone" placeholder="Seu telefone" required>
+          <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
+          <div class="botoes-form">
+            <button type="submit">Enviar</button>
+            <button type="button" id="limparForm">Limpar</button>
+          </div>
+        </form>
+        <p id="status"></p>
+      </div>
+       <!-- Mapa -->
+      <div class="mapa">
+        <h4>Onde estamos?</h4>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.9908822005154!2d-46.468080424672834!3d-23.46079337886912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce61c4c95cae49%3A0x5257ddf00a5cf04f!2sEletrotem%20Comercial%20Ltda!5e0!3m2!1spt-BR!2sbr!4v1757361771709!5m2!1spt-BR!2sbr" 
+          width="300" 
+          height="300" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe> 
+      </div>
+    </div>
+
+    <!-- Redes sociais -->
+    <div class="redes-sociais">
+      <a href="https://www.instagram.com/eletrotem.com.br/" target="_blank"><img src="img/instagram.png" alt="Instagram"></a>
+      <a href="https://linkedin.com/in/seuusuario" target="_blank"><img src="img/linkedin.png" alt="LinkedIn"></a>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Footer -->
+  <footer>
+  <div class="footer-container">
+    
+    <!-- Coluna 1: Logo + descrição -->
+    <div class="footer-logo">
+      <img src="img/eletrotemLogoBranco.png" alt="Eletrotem">
+      <p>Soluções em energia e automação há quase 30 anos, unindo tradição, inovação e confiança.</p>
+    </div>
+
+    <!-- Coluna 2: Links rápidos -->
+    <div class="footer-links">
+      <h4>Links</h4>
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre Nós</a></li>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </div>
+
+    <!-- Coluna 3: Contato -->
+    <div class="footer-contato">
+      <h4>Contato</h4>
+      <p>📍 Av. Nova Cumbica, 294 - Guarulhos/SP</p>
+      <p>📞 (11) 2412-0720</p>
+      <p>✉️ eletrotem@eletrotem.com.br</p>
+    </div>
+
+    <!-- Coluna 4: Redes sociais -->
+    <div class="footer-social">
+      <h4>Siga-nos</h4>
+      <a href="https://www.instagram.com/eletrotem.com.br/" target="_blank">
+        <img src="img/instagramBranco.png" alt="Instagram">
+      </a>
+      <a href="https://linkedin.com/in/seuusuario" target="_blank">
+        <img src="img/linkedinBranco.png" alt="LinkedIn">
+      </a>
+    </div>
+  </div>
+
+  <!-- Linha final -->
+  <div class="footer-bottom">
+    <p>© 2025 Eletrotem - Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

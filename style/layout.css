@@ -1,0 +1,32 @@
+/* Estrutura de seções */
+section {
+  width: 100%;
+  padding: 80px 20px;
+}
+
+.section-content {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+section h3 {
+  font-size: 2rem;
+  color: #003366;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+section p {
+  text-align: center;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Fundos das seções */
+#inicio { background: linear-gradient(to right, #003366, #004080, #0059b3); color: white; }
+#sobre { background-color: #f0f8ff; color: #003366; }
+#produtos { background-color: #ffffff; color: #003366; }
+#projetos { background-color: #e6f2ff; color: #003366; }
+#contato { background-color: #f7f7f7; color: #003366; }
