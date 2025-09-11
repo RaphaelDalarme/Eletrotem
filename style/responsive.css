@@ -26,7 +26,7 @@
   .hero h2 { font-size: 1.4rem; }
   .hero p { font-size: 0.85rem; }
   footer { font-size: 0.85rem; }
-  header img{ width: 20px;}
+  header img{ max-width: 180px;}
 }
 
 @media (max-width: 768px) {
@@ -38,6 +38,7 @@
     max-width: 100%;
   }
 }
+
 
 
 
