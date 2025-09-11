@@ -56,6 +56,7 @@
   padding: 50px 0;
   text-align: center;
   background: #f9f9f9;
+  overflow: hidden; /* esconde o que passar da largura da tela */
 }
 
 .marcas h2 {
@@ -65,17 +66,17 @@
 
 .carrossel {
   display: flex;
-  width: max-content;
-  animation: scroll 20s linear infinite;
+  width: 100%;       /* ocupa só o espaço da tela */
+  overflow: hidden;  /* impede scroll lateral */
 }
 
 .marcas-track {
   display: flex;
   gap: 30px;
-  width: calc(200%); /* espaço dobrado por causa da duplicação */
+  width: calc(200%); /* largura dobrada para a animação */
   animation: deslizar 20s linear infinite;
-  flex-wrap: nowrap;   /* impede quebrar linha */
-  align-items: center; /* centraliza verticalmente */
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
 .item {
@@ -97,8 +98,7 @@
   object-fit: contain;
 }
 
-/* Animação corrigida */
-@keyframes scroll {
+@keyframes deslizar {
   from {
     transform: translateX(0);
   }
@@ -106,6 +106,7 @@
     transform: translateX(-50%);
   }
 }
+
 
 
 /* Produtos */
@@ -132,21 +133,33 @@
 
 /* Projetos */
 .projetos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;         /* permite quebrar linha se não couber */
+  justify-content: center; /* centraliza os cards na linha */
+  gap: 20px;               /* espaçamento entre os cards */
   margin-top: 40px;
 }
+
 .projeto-card {
   background: #e6f2ff;
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
   text-align: center;
+  width: 280px;            /* largura fixa */
+  transition: transform 0.3s;
 }
-.projeto-card:hover { transform: translateY(-5px); }
-.projeto-card h4 { color: #003366; margin-bottom: 10px; }
+
+.projeto-card:hover {
+  transform: translateY(-5px);
+}
+
+.projeto-card h4 {
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+
 
 .saiba-mais {
   text-align: center;
